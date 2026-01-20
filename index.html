@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>✨ BLOG STUDIO</h1>
+        <p>Create, edit, and manage your blog posts in style</p>
+    </div>
+
+    <div class="container">
+        <div class="post-form">
+            <h2 style="margin-top:0">✍️ New Post</h2>
+            <input type="text" id="postTitle" placeholder="Title *">
+            <textarea id="postBody" rows="4" placeholder="Content *"></textarea>
+            <input type="text" id="postAuthor" placeholder="Author name (optional)">
+            <button class="publish-btn" onclick="submitPost()">🚀 PUBLISH</button>
+        </div>
+
+        <div class="status-panel" style="background: #1e293b; padding: 15px; border-radius: 12px; border: 1px solid #38bdf8; width: 200px; margin-bottom: 20px;">
+    <h3 style="color: #38bdf8; margin: 0 0 10px 0;">📊 Status</h3>
+    <p style="color: #94a3b8; margin: 5px 0;">Posts: <span id="post-count" style="color: white;">0</span></p>
+    <p style="color: #94a3b8; margin: 5px 0;">Status: <span id="connection-status" style="color: #4ade80;">Connected</span></p>
+    <p style="color: #94a3b8; margin: 5px 0; font-size: 0.8em;">Updated: <span id="last-update">--:--:--</span></p>
+</div>
+
+        <h2>📖 Latest Posts</h2>
+        <div id="posts-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

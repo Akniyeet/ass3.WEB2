@@ -1,0 +1,142 @@
+:root {
+    --bg-dark: #111827;
+    --card-dark: #1f2937;
+    --accent: #06b6d4; /* Neon Cyan */
+    --text-white: #f9fafb;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: var(--accent);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* New Post Form */
+.post-form {
+    background: var(--card-dark);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+}
+
+input, textarea {
+    width: 100%;
+    background: #374151;
+    border: 1px solid #4b5563;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button.publish-btn {
+    background: var(--accent);
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Blog Cards */
+.blog-card {
+    background: var(--card-dark);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--accent);
+}
+
+.blog-card h3 { color: var(--accent); margin-top: 0; }
+.blog-card p { line-height: 1.6; }
+.blog-card .meta { display: flex; justify-content: space-between; font-size: 0.8rem; opacity: 0.6; }
+
+
+/* Панель статуса - теперь максимально высоко */
+.status-panel {
+    position: fixed; 
+    left: 20px; 
+    top: 20px; /* Было 100px, теперь подняли на самый верх */
+    background: #1e293b; 
+    padding: 20px; 
+    border-radius: 12px; 
+    border: 1px solid #38bdf8; 
+    width: 180px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* Остальные стили оставляем как были */
+.status-panel h3 {
+    color: #38bdf8; 
+    margin: 0 0 15px 0; 
+    font-size: 1.1em;
+}
+
+.status-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-label {
+    color: #94a3b8; 
+    font-size: 0.9em;
+}
+
+.status-value {
+    color: white; 
+    font-weight: bold;
+}
+
+.status-connected {
+    color: #4ade80; 
+    font-weight: bold;
+}
+
+.status-footer {
+    border-top: 1px solid #334155; 
+    margin-top: 10px; 
+    padding-top: 10px;
+}
+
+.sync-label {
+    color: #64748b; 
+    font-size: 0.7em;
+}
+
+.sync-time {
+    color: #38bdf8; 
+    font-size: 0.8em;
+}
