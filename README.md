@@ -10,6 +10,8 @@ Connection Monitor: A live status panel that confirms the backend's connection t
 
 RESTful API: Built with Express.js to handle data routing and server logic.
 
+
+
 🛠 Tech Stack
 Frontend: HTML5, CSS3 (Custom Flexbox layout), and Vanilla JavaScript.
 
@@ -19,10 +21,14 @@ Database: MongoDB using the Mongoose ODM.
 
 Version Control: Git and GitHub.
 
+
+
 🔒 Security & Privacy
 Environment Variables: Sensitive data such as database credentials have been removed from the public repository to follow security best practices.
 
 Ignored Files: Local configuration files are managed via .gitignore.
+
+
 
 ⚙️ How to Run Locally
 Clone the project: git clone https://github.com/Akniyeet/ass3.WEB2.git
